@@ -15,6 +15,12 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "1080px",
+        xl: "1440px",
+      },
     },
   },
   plugins: [],
