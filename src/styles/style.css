@@ -25,7 +25,7 @@
     @apply font-outfit;
   }
   h1 {
-    @apply text-6xl sm:text-8xl main-heading;
+    @apply text-6xl sm:text-8xl;
   }
   h2 {
     @apply text-xl font-semibold;

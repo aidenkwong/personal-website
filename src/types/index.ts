@@ -6,11 +6,13 @@ export interface IMetaHead {
 
 export interface IHeroProps {
   name: string;
+  tagline: string;
   about: string;
 }
 
 export interface IExperience {
   name: string;
+  company: string;
   location: string;
   startDate: string;
   endDate: string;
