@@ -1,9 +1,6 @@
 /* ========== import font source ========== */
 @import "fonts.css";
 
-/* ========== import custom styles ========== */
-@import "custom-styles.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,7 +40,7 @@
     object-fit: contain;
   }
 
-  .emerald-hero {
+  .green-hero {
     @apply hidden dark:block;
   }
   .sky-hero {

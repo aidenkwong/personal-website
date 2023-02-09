@@ -18,9 +18,7 @@ const { title, details } = Astro.props as IExperiences;
                 {item.name}
               </h3>
             ) : (
-              <h3 class="text-xl font-semibold">
-                {item.name}
-              </h3>
+              <h3 class="text-xl font-semibold">{item.name}</h3>
             )}
             <p class="text-sm dark:text-gray">
               {item.startDate} - {item.endDate}

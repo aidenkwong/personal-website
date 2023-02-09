@@ -62,10 +62,20 @@ export const info = {
   projects: [
     {
       title: "Dezktop",
+      description: `A website that acts as a home page for browser`,
       isFeatured: true,
       thumbnail: "/assets/images/dezktop.png",
       githubUrl: "https://github.com/aidenkwong/Dezktop",
       liveUrl: "https://dezktop.vercel.app/",
+    },
+    {
+      title: "Youtube Popular Videos Archiver",
+      description: ` A server archives global YouTube popular videos daily`,
+      isFeatured: true,
+      thumbnail: "/assets/images/ympv.png",
+      githubUrl:
+        "https://github.com/aidenkwong/Youtube-Popular-Video-API-Backend",
+      liveUrl: "https://ympv.live/",
     },
   ],
 };
