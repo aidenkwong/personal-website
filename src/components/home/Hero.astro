@@ -8,11 +8,19 @@ const { name, tagline, about } = Astro.props as IHeroProps;
   <div class="lg:w-[600px]">
     <p class="dark:text-light mt-[117px]">Hey, I'm</p>
     <h1 class="font-bold my-8 dark:text-light">{name}</h1>
-    <p class="text-sky-600 dark:text-green-400 text-lg mt-6 font-semibold">{tagline}</p>
+    <p class="text-sky-600 dark:text-green-400 text-lg mt-6 font-semibold">
+      {tagline}
+    </p>
     <p class="dark:text-light text-lg mb-16 mt-3">
       {about}
     </p>
   </div>
-  <img class="hero-image mx-auto w-auto" src="/assets/images/astronaut.png"/>
-
+  <img
+    class="hero-image mx-auto w-auto emerald-hero"
+    src="/assets/images/emerald-hero.png"
+  />
+  <img
+    class="hero-image mx-auto w-auto sky-hero"
+    src="/assets/images/sky-hero.png"
+  />
 </section>

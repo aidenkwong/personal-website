@@ -43,6 +43,13 @@
     object-fit: contain;
   }
 
+  .emerald-hero {
+    @apply hidden dark:block;
+  }
+  .sky-hero {
+    @apply block dark:hidden;
+  }
+
   @keyframes MoveUpDown {
     0%,
     100% {
