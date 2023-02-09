@@ -17,11 +17,18 @@ const Projects = info.projects.map((project) => project);
       ogImageUrl={"/assets/images/profile.png"}
     />
   </head>
-
   <body>
     <Layout>
-      <h1 class="dark:text-light">Projects</h1>
-      <ProjectsWrapper projects={Projects} />
+      <div class="flex flex-col gap-16 dark:text-light">
+        <h1 class="dark:text-light">Projects</h1>
+        <p class="dark:text-light">
+          To checkout more, please visit my <a
+            class="dark:text-light link hover:underline"
+            href={info.socialMedia.github}>GitHub</a
+          >.
+        </p>
+        <ProjectsWrapper projects={Projects} />
+      </div>
     </Layout>
   </body>
 </html>

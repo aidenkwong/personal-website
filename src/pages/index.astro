@@ -6,6 +6,9 @@ import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
+import Paragraph from "@components/general/Paragraph.astro";
+import AboutMe from "@components/general/AboutMe.astro";
+import Technical from "@components/general/Technical.astro";
 
 const featureProjects = info.projects.map((project, index) => {
   if (project.isFeatured && index < 6) {
@@ -26,60 +29,17 @@ const featureProjects = info.projects.map((project, index) => {
 
   <body>
     <Layout>
-      <Hero name={info.name} tagline={info.tagline} about={info.about} />
+      <Hero
+        name={info.name}
+        tagline={info.tagline}
+        highLights={info.highLights}
+      />
+      <AboutMe title={"ABOUT ME"} content={info.about} />
       <Experience title={"WORK"} details={info.experience} />
       <Experience title={"EDUCATION"} details={info.education} />
-      <section class="mt-16">
-        <h2 class="w-[15rem] dark:text-light text-xl font-semibold">
-          TECHNICAL SKILLS
-        </h2>
-        <div class="w-full">
-          <div class="mt-8 flex">
-            <h3 class="w-[15rem] text-sky-600 dark:text-green-400">
-              Programming languages
-            </h3>
-            <div class="flex flex-wrap gap-4">
-              {
-                info.technical.languages.map((skill) => (
-                  <div class="flex items-center gap-2 ">
-                    <p class="dark:text-gray">{skill}</p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-          <div class="mt-8 flex">
-            <h3 class="w-[15rem] text-sky-600 dark:text-green-400">
-              Technologies
-            </h3>
-            <div class="flex flex-wrap gap-4">
-              {
-                info.technical.technologies.map((skill) => (
-                  <div class="flex items-center gap-2">
-                    <p class="dark:text-gray">{skill}</p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-          <div class="mt-8 flex">
-            <h3 class="w-[15rem] text-sky-600 dark:text-green-400">
-              Databases
-            </h3>
-            <div class="flex flex-wrap gap-4">
-              {
-                info.technical.databases.map((skill) => (
-                  <div class="flex items-center gap-2">
-                    <p class="dark:text-gray">{skill}</p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </section>
+      <Technical />
       <section>
-        <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
+        <h2 class="w-[15rem] dark:text-light mt-32">FEATURE PROJECTS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
     </Layout>

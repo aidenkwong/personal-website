@@ -1,12 +1,16 @@
 export const info = {
   baseUrl: "https://aidenkwong.vercel.app",
   name: "Aiden Kwong",
-  tagline: "Software Engineer | TypeScript | Fullstack",
-  about: `I'm a software engineer based in Toronto, Canada.
+  highLights: "Software Engineer | TypeScript | Fullstack",
+  tagline: "I build software to solve real-world problems.",
+
+  about: [
+    `I'm a software engineer based in Toronto, Canada.
   I'm passionate about building software that leverages the latest technologies to solve real-world problems.
   My expertise lies in building web applications using React and Node.js and my language of choice is TypeScript.
   I'm a lifelong learner and I'm always looking for opportunities to improve my skills and learn new technologies.
   `,
+  ],
   technical: {
     languages: ["TypeScript", "JavaScript", "Python", "Java"],
     technologies: ["React", "Vue", "Node.js", "Express", "Docker", "AWS"],
@@ -17,6 +21,7 @@ export const info = {
     {
       name: "Software Engineer",
       company: "Aigniter Holdings",
+      companyUrl: "https://www.aigniter.com/",
       location: "Hong Kong",
       startDate: "May 2022",
       endDate: "Dec 2022",
@@ -30,6 +35,7 @@ export const info = {
     {
       name: "Data Visualization Developer (internship)",
       company: "Chartipedia",
+      companyUrl: "https://studio.chartipedia.com/",
       location: "Hong Kong",
       startDate: "Jan 2022",
       endDate: "Mar 2022",

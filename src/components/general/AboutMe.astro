@@ -1,0 +1,41 @@
+---
+import { Paragraph } from "@types";
+
+const { title, content } = Astro.props as Paragraph;
+---
+
+<section
+  class="w-full flex-col gap-4 dark:text-light h-[75vh] text-center pt-24"
+>
+  <h2 class="w-[15rem] mt-16 text-3xl mx-auto">{title}</h2>
+  <p class="max-w-prose mt-6 mx-auto dark:text-light text-lg leading-8">
+    <span>I'm a</span>
+    <span
+      class="underline underline-offset-4 decoration-sky-600 dark:decoration-green-400 decoration-[3px]"
+    >
+      software engineer</span
+    >
+    <span
+      >based in Toronto, Canada. I'm passionate about building software that
+      leverages the latest technologies to solve real-world problems. My
+      expertise lies in building web applications using</span
+    >
+    <span
+      class="underline underline-offset-4 decoration-sky-600 dark:decoration-green-400 decoration-[3px]"
+      >React</span
+    > and
+    <span
+      class="underline underline-offset-4 decoration-sky-600 dark:decoration-green-400 decoration-[3px]"
+      >Node.js</span
+    >
+    <span> and my language of choice is</span>
+    <span
+      class="underline underline-offset-4 decoration-sky-600 dark:decoration-green-400 decoration-[3px]"
+    >
+      TypeScript</span
+    ><span
+      >. I'm a lifelong learner and I'm always looking for opportunities to
+      improve my skills and learn new technologies.</span
+    >
+  </p>
+</section>

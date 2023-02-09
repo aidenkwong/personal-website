@@ -1,0 +1,14 @@
+---
+import { Paragraph } from "@types";
+
+const { title, content } = Astro.props as Paragraph;
+---
+
+<section class="w-full flex-col gap-4 dark:text-light grid content-center my-8">
+  <div class="">
+    <h2 class="w-[15rem] mt-16 text-3xl">{title}</h2>
+    <div class="max-w-prose mt-6">
+      {content.map((item) => <p class="dark:text-light">{item}</p>)}
+    </div>
+  </div>
+</section>

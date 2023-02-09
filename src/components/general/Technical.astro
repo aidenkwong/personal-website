@@ -1,0 +1,47 @@
+---
+import { info } from "@data";
+---
+
+<section class="mt-16">
+  <h2 class="w-[15rem] dark:text-light text-xl font-semibold">
+    TECHNICAL SKILLS
+  </h2>
+  <div class="w-full">
+    <div class="mt-8 flex">
+      <h3 class="w-[15rem] dark:text-light">Programming languages</h3>
+      <div class="flex flex-wrap gap-4">
+        {
+          info.technical.languages.map((skill) => (
+            <div class="flex items-center gap-2 ">
+              <p class="text-sky-500 dark:text-emerald-400 ">{skill}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="mt-8 flex">
+      <h3 class="w-[15rem] dark:text-light">Technologies</h3>
+      <div class="flex flex-wrap gap-4">
+        {
+          info.technical.technologies.map((skill) => (
+            <div class="flex items-center gap-2">
+              <p class="text-sky-500 dark:text-emerald-400 ">{skill}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="mt-8 flex">
+      <h3 class="w-[15rem] dark:text-light">Databases</h3>
+      <div class="flex flex-wrap gap-4">
+        {
+          info.technical.databases.map((skill) => (
+            <div class="flex items-center gap-2">
+              <p class="text-sky-500 dark:text-emerald-400 ">{skill}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
