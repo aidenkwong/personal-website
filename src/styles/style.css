@@ -22,10 +22,10 @@
     @apply font-outfit;
   }
   h1 {
-    @apply text-6xl sm:text-8xl;
+    @apply text-6xl sm:text-8xl font-bold;
   }
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-3xl font-semibold;
   }
   p,
   li,

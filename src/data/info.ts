@@ -83,5 +83,13 @@ export const info = {
         "https://github.com/aidenkwong/Youtube-Popular-Video-API-Backend",
       liveUrl: "https://ympv.live/",
     },
+    {
+      title: "Awesome Go Package Rank",
+      description: `A table of golang packages ranked by import number and GitHub stars`,
+      isFeatured: true,
+      thumbnail: "/assets/images/go-package-rank.png",
+      githubUrl: "https://github.com/aidenkwong/go-package-rank",
+      liveUrl: "https://aidenkwong.me/go-package-rank/",
+    },
   ],
 };
